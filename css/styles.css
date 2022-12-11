@@ -9,6 +9,7 @@
     --footer-text-color:  #E7E9FC;
     --team-img-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     --img-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    --icon-color: #8E8F99;
     }
 
  h1,h2,h3,p {
@@ -192,6 +193,8 @@
         padding-top: 192px;
         padding-bottom: 192px;
         background-color: var(--title-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+        background-size: cover;
     }
 
     
@@ -337,7 +340,7 @@
 
     
     .data {
-        
+        text-align: center;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -348,7 +351,7 @@
     
     .text {
     margin-top: 8px;
-    
+    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -375,11 +378,76 @@
         background-color: var(--primary-color);
     }
 
+    .social-list-link:hover,
+    .social-list-link:focus{
+        background-color: #31D0AA;
+    }
+
     .social-list-icon {
         fill: var(--second-text-color);
     }
     
+    .social-list{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
 
+
+
+    /*======================================================= CUSTOMERS ===========================================*/
+
+    .customers-title {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 72px;
+    }
+
+    .customers-list {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 120px;
+
+    }
+
+    .customers-item {
+        width: 168px;
+        height: 88px;
+        
+    }
+
+    .customers-list-link {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--icon-color);
+        border-radius: 4px;
+        padding: 16px 32px;
+        color: var(--icon-color);
+        
+    }
+
+    .customers-icon {
+        fill: currentColor;
+        
+        
+    }
+
+
+    .customers-list-link:hover,
+    .customers-list-link:focus {
+      color: var(--primary-color); 
+      border-color: var(--primary-color);
+    }
+
+
+
+    
 /*============================================================= FOOTER ========================================== */
     
 .footer-part {
@@ -404,6 +472,56 @@
      display: inline-block;   
      margin-bottom: 16px;
     }
+
+    .footer-media-title{
+        margin-bottom:16px;
+        font-family: var(--primary-font)
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color:var(--second-text-color);
+        
+        
+    }
+
+    
+
+    .social-list-footer-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--text-color);
+        
+    }
+
+    .social-list-footer-link:hover,
+    .social-list-footer-link:focus{
+        background-color: #31D0AA;
+    }
+     
+    .footer-data{
+        display: flex;
+    }
+
+   .social-media-footer{
+    margin-left: 120px;
+   }
+    
+   
+   .social-list-footer{
+    display: flex;
+    margin-right: 120px;
+    gap: 16px;
+   }
+
+   
+   
+    
+    
 
 
     /*======================================================== PORTFOLIO ======================================= */
