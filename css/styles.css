@@ -43,6 +43,7 @@
 
     .section {
         padding-top: 120px;
+        padding-bottom: 120px;
         
         
     }
@@ -320,11 +321,11 @@
         margin-right: 0;
     }
 
+
     .activity-section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        
+        padding-top: 0;
     }
+    
 
         
     
@@ -437,17 +438,10 @@
     .customers-list {
         display: flex;
         gap: 24px;
-        padding-bottom: 120px;
-
+        
     }
 
-    /* .customers-item {
-        width: 168px;
-        height: 88px;
-        
-         */
-    /* } */
-
+   
     .customers-list-link {
         display:flex;
         justify-content: center;
@@ -564,9 +558,9 @@
         justify-content: center;
         margin-bottom: 72px;
         
-        
     }
 
+    
     .portfolio-btn:not(:last-child) {
         margin-right: 24px;
     }
@@ -596,6 +590,7 @@
 
     .btn-item-all:hover,
     .btn-item-all:focus{
+    border: 1px solid transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);  
     }
 
@@ -612,17 +607,17 @@
     color: var(--primary-color);
     background: var(--dominant-color);
     padding: 8px 16px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--footer-text-color);
     border-radius: 4px;
     }
     
     
     .btn-item:hover,
     .btn-item:focus {
-    color: var(--second-text-color);
+     color: var(--second-text-color);
      background-color: var(--primary-color); 
      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+     border: 1px solid transparent;
     
     }
 
